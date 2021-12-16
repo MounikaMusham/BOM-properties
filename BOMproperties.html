@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Diaplay height and width of window</h2>
+
+<p id="new"></p>
+<p id="new1"></p>
+<p id="new2"></p>
+
+<p id="new3"></p>
+
+<input type="button" value="Back" onclick="goBack()">
+
+<script>
+document.getElementById("new").innerHTML =
+"Browser inner window width: " + window.innerWidth + "px<br>" +
+"Browser inner height width: " + window.innerHeight +"px<br>";
+
+document.getElementById("new1").innerHTML = 
+"Screen width is" + screen.width;
+
+document.getElementById("new2").innerHTML = 
+"The URL of this page is:<br><br>" + window.location.href
+
+document.getElementById("new3").innerHTML =
+"Status of cookies:<br><br> " + navigator.cookieEnabled;
+
+function goBack() {
+  window.history.back()
+}
+</script>
+
+</body>
+</html>
